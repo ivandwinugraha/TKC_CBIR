@@ -7,7 +7,7 @@ from flask import request
 from flask import render_template
 from pathlib import Path
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 # Read image features
 fe = FeatureExtractor()
